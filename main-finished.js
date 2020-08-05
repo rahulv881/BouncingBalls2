@@ -134,13 +134,13 @@ EvilCircle.prototype.checkBounds = function() {
 EvilCircle.prototype.setControls = function() {
   let _this = this;
 window.onkeydown = function(e) {
-    if (e.key === 'a') {
+    if (e.key === 'a' || e.keyCode === 37) {
       _this.x -= _this.velX;
-    } else if (e.key === 'd') {
+    } else if (e.key === 'd' || e.keyCode === 39) {
       _this.x += _this.velX;
-    } else if (e.key === 'w') {
+    } else if (e.key === 'w' || e.keyCode === 38) {
       _this.y -= _this.velY;
-    } else if (e.key === 's') {
+    } else if (e.key === 's' || e.keyCode === 40) {
       _this.y += _this.velY;
     }
   };//1
